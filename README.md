@@ -10,5 +10,5 @@ Rotter is a  Hebrew news site and my main way of getting news in Hebrew.
 The original site [rotter.net](http://rotter.net/), has an old design and feel.
 So I decided to give it a different and more modern look, atlist for the scoops page.
 
-** All the data and content of this app belongs to [rotter.net](http://rotter.net/),
-just with a nicer look. :) **
+**All the data and content of this app belongs to [rotter.net](http://rotter.net/),
+just with a nicer look. :)**
