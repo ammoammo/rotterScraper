@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  /*padding: 0;*/
+  margin: 0;
+}
+
+html {
+  font-family: 'Assistant', sans-serif;
+  font-size: 16px;
+}
+
+/* desktop*/
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  background: #fdfdfd;
+}
+
+ul {
+  padding-right: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem!important;
+  /*color: white;*/
+  /*text-shadow: 2px 2px #1eafc6;*/
+}
+
+h4{
+  font-weight: 600;  
+}
+
+a {
+  color: #1897a6;
+}
+
+.row .col {
+  float: right;
+}
+
+.btn {
+  background: #1897a6;
+}
+.divider {
+  margin-top: 1rem;  
+}
+
+.top-border {
+  border-top: 5px solid #1897a6;
+}
+
+.parallax-container {
+  height: 200px;
+  /*color: white;*/
+}
+
+.parallax-container img {
+  filter: blur(5px);
+}
+
+#scoopsTitles {
+  margin-top: -80px;
+}
+
+#scoopsTitles li:first-child {
+  padding: 1rem;
+  background: white;
+  /*color: #1fbcd3;*/
+  /*border-top: 5px solid #1fbcd3;*/
+  border-bottom: 1px solid #ddd;
+}
+
+#scoopsTitles li {
+  background: white;
+}
+
+#scoopsTitles .row {
+  margin-bottom: 0;
+}
+
+.collapsible.popout>li {
+  margin: 0 0.5rem;
+}
+
+.collapsible.popout>li.read {
+  border-right: 5px solid #1897a6;
+}
+
+.collapsible-header .scoop-icon {
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+.collapsible-header i {
+  margin-right: 0;
+}
+
+.collapsible-header .scoop-title {
+  font-size: 1.5rem;
+}
+
+.collapsible-header .scoop-time {
+  margin-right: auto;
+  padding-right: 0.5rem;
+}
+
+.collapsible-body {
+  padding: 1.2rem;
+}
+
+.collapsible-body .left {
+  padding-top: 0.6rem;
+}
+
+.scoop {
+  margin-top: -80px;
+  word-wrap: break-word;
+}
+
+
+
+.comments img,
+.scoop img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.comments img[src^="http://rotter.net/User_files/"],
+.comments img[src^="http://rotter.net/forum/Images"] {
+  max-width: 30px;
+} 
+
+#scoopContent {
+  padding: 1rem 0;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+}
+#scoopContent > * {
+  padding: 0.8rem 0;
+}
+
+.comments {
+  /*border-right: 0;*/
+  background: #f1f1f1;
+}
+
+footer {
+  padding-bottom: 1rem;
+}

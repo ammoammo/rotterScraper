@@ -1,0 +1,19 @@
+{
+  "name": "rotterscraper",
+  "version": "1.0.0",
+  "description": "rotter.net scoops web scraping for  a different visual style",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ammo",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "sanitize-html": "^1.17.0"
+  }
+}

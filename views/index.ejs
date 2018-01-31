@@ -1,0 +1,51 @@
+<% include partials/header %>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="http://www.chipscalereview.com/assets/images/demo/layerslider/cubes-bg.jpg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col m10 pull-m1 s12">
+      <ul id="scoopsTitles" class="collapsible popout z-depth-3" data-collapsible="accordion">
+        <li class="top-border">
+          <div class="container center-align">
+            <h1>Rotter.net</h1>            
+            <p>
+              <%= scoops.length %> סקופים אחרונים | <a href="http://rotter.net/forum/listforum.php">לכל הסקופים</a>
+            </p>
+            <p><small>by</small> Ammo</p>
+          </div>
+        </li>
+        <% scoops.forEach(scoop=>{ %>
+          <li>
+            <div class="collapsible-header valign-wrapper">
+              <div class="scoop-icon">
+                <!--<img src="<%= scoop.iconUrl %>" alt="scoop icon">-->
+                <a class="scoop-link" href="/scoops/<%= scoop.id %>" target="_blank">
+                  <i class="material-icons small">open_in_new</i> 
+                </a>
+              </div>
+              <div class="scoop-title">
+                <%= scoop.title %>
+              </div>
+              <div class="scoop-time">
+                <%= scoop.hour %>
+              </div>
+            </div>
+            <div class="collapsible-body valign-wrapper">
+              <a class="btn scoop-link" href="/scoops/<%= scoop.id %>" target="_blank">
+                לפרטים                                
+              </a>
+              <p class="left">
+                <%= scoop.author %> |
+                 <%= scoop.date %>
+              </p>
+            </div>
+          </li>
+          <% }); %>
+      </ul>
+    </div>
+    <!-- ./col s12 -->
+  </div>
+  <!-- ./row -->
+  <% include partials/footer %>

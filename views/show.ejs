@@ -1,0 +1,48 @@
+<% 
+  let counter = 0;
+  let oldTo = 0;
+%>
+
+<% include partials/header %>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="http://www.chipscalereview.com/assets/images/demo/layerslider/cubes-bg.jpg">
+    </div>
+  </div>
+  <div class="container row">
+    <div class="col s12">
+      <div class="scoop card-panel top-border z-depth-4">        
+        <h4>
+          <%= scoop.title %>
+        </h4>
+        <p><%= scoop.date %> | <%= scoop.hour %> | <%= scoop.author %></p>
+        <div class="divider"></div>
+        <div id="scoopContent">
+          <%- scoop.content %>
+        </div>
+      </div>
+    </div>
+    <div class="col s12">
+      <ul class="comments collection with-header z-depth-2">        
+        <li class="collection-header top-border"><h4>תגובות</h4></li>        
+        <% scoop.comments.forEach((cmnt)=>{ %>
+        <%
+        let style = "margin: 0;";
+        let cmntPad= (Number(cmnt.pad)/18);
+        if(cmntPad){
+          style = "margin-right: " + cmntPad + "rem;";
+        }
+        %>
+        <li class="collection-item" style="<%= style %>">
+          <div id="comment<%= cmnt.id %>" >
+            <p class="cyan-text text-accent-4"><%= cmnt.author %></p>
+            <p><small class="grey-text text-lighten-2">תגובה להודעה <%= cmnt.to %></small></p>
+            <p><strong><%= cmnt.title %></strong></p>            
+            <div><%- cmnt.content %></div>
+          </div>
+        </li>        
+        <% }); %><!-- for key in comments -->
+      </ul>              
+    </div>
+  </div>
+  <% include partials/footer %>
